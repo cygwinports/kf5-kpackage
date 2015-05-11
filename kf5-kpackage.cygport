@@ -1,0 +1,27 @@
+inherit kf5
+
+NAME="kf5-kpackage"
+VERSION=5.9.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 non-binary plugin support library"
+DESCRIPTION="The Package framework lets the user to install and load packages of
+non-binary content such as scripted extensions or graphic assets, as if they
+were traditional plugins."
+
+PKG_NAMES="libKF5Package5 libKF5Package-devel"
+libKF5Package5_CONTENTS="
+	usr/bin/cygKF5Package-5.dll
+	usr/bin/kpackagetool5.exe
+	usr/share/doc/
+	usr/share/kservicetypes5/
+	usr/share/locale/
+	usr/share/man/
+"
+libKF5Package_devel_REQUIRES="libKF5Archive-devel libKF5Config-devel libKF5CoreAddons-devel libKF5I18n-devel"
+libKF5Package_devel_CONTENTS="
+	usr/include/KF5/KPackage/
+	usr/include/KF5/kpackage_version.h
+	usr/lib/cmake/KF5Package/
+	usr/lib/libKF5Package.dll.a
+"
