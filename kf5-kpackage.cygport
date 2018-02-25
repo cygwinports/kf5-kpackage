@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kpackage"
-VERSION=5.39.0
+VERSION=5.43.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 non-binary plugin support library"
@@ -11,6 +11,7 @@ were traditional plugins."
 
 PKG_NAMES="libKF5Package5 libKF5Package-devel"
 libKF5Package5_CONTENTS="
+	etc/xdg/kpackage.categories
 	usr/bin/cygKF5Package-5.dll
 	usr/bin/kpackagetool5.exe
 	usr/share/doc/
